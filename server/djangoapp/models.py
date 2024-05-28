@@ -35,7 +35,7 @@ class CarModel(models.Model):
     CAR_TYPES = [
         ('SEDAN', 'Sedan'),
         ('SUV', 'SUV'),
-        ('WAGON', 'WAGON'), 
+        ('WAGON', 'WAGON'),
         ('HATCHBACK', 'Hatchback'),
         ('COUPE', 'Coupe'),
         ('MUV', 'MUV')
@@ -46,6 +46,6 @@ class CarModel(models.Model):
                                             MaxValueValidator(2023),
                                             MinValueValidator(2015)
                                         ])
-    
+
     def __str__(self):
         return self.model_name
